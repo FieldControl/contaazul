@@ -15,7 +15,7 @@
   </p>
   <p>
     Built with ❤︎ by 
-      <a href="https://github.com/FieldControl">FieldControl</a> e
+      <a href="https://github.com/FieldControl">FieldControl</a> and
       <a href="https://github.com/FieldControl/contaazul/graphs/contributors">contributors</a>
   </p>
 </div>
