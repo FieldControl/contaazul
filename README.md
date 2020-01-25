@@ -9,6 +9,8 @@
 
 ![Field Control ♥](https://img.shields.io/badge/Field%20Control-%20%20%20%20%20%20♥-blue.svg)
 ![](https://github.com/FieldControl/contaazul/workflows/Continuous%20Integration/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7277a15a0179ed9d7010/maintainability)](https://codeclimate.com/repos/5e2c796c97e9f50163006c7d/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7277a15a0179ed9d7010/test_coverage)](https://codeclimate.com/repos/5e2c796c97e9f50163006c7d/test_coverage)
 
   </p>
   <p>
@@ -19,6 +21,33 @@
 </div>
 
 ---
+
+## Installation
+
+This client is intended for server side use only.
+
+```
+npm install contaazul --save
+```
+
+## Playground
+
+You can run and watch everthing working fine at [bin/playground.js](playground)
+
+**Note**: You must enter your accessToken before running:
+
+```
+node bin/playground.js
+```
+
+## Usage
+
+```js
+const ContaAzul = require('contaazul')
+const client = new ContaAzul({
+  accessToken: 'Wx15BlcpBbQyl15y64I0vDfVPWbsTdNX<3'
+})
+```
 
 ### Product
 
@@ -1199,4 +1228,24 @@ const response = await client.sales.delete('968150ce-d57a-4a97-ab6c-4da83b255f79
 </div>
 <div align="center">
   <img height="30px" src=".github/static/separator.png"/>
+</div>
+
+## Pull Requests
+
+- **Add tests!** Your patch won't be accepted if it doesn't have tests.
+- **Document any change in behaviour**. Make sure the README and any other
+  relevant documentation are kept up-to-date.
+- **Create topic branches**. Don't ask us to pull from your master branch.
+- **One pull request per feature**. If you want to do more than one thing, send
+  multiple pull requests.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
+
+<div align="center">
+  <h3>Build with ❤ by Field Control︎</h3>
+  <p>
+    Follow <a href="https://instagram/fieldcontrolapp" target="_blank">@FieldControlApp</a> on instagram! :)
+  </p> 
 </div>

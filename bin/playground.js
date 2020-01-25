@@ -1,11 +1,7 @@
-const Client = require('./../src/index')
-const client = new Client({
-  accessToken: 'Wx15BlcpBbQylCTy64I0vDfVPWbsTdN5'
+const ContaAzul = require('./../src/index')
+const client = new ContaAzul({
+  accessToken: 'Wsa5BlcpBbQylCasd64I0vDfVPWbsTasd5<3'
 })
-
-// { refreshToken: 'tZL0NFj62Z2bxVIuNw7Rc1BD2ncYkfey',
-//   accessToken: 'Wx15BlcpBbQylCTy64I0vDfVPWbsTdN5',
-//   expiresAt: '2020-01-25T15:30:53-02:00' }
 
 const print = (response) => {
   console.log(JSON.stringify(response, null, 2))

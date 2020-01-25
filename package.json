@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "npx jest --verbose",
-    "lint": "npx eslint src/ --fix"
+    "lint": "npx eslint src/ --fix",
+    "coverage": "npm test"
   },
   "repository": {
     "type": "git",
@@ -39,5 +40,9 @@
     "hooks": {
       "pre-commit": "npm run lint && npm test"
     }
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
   }
 }
