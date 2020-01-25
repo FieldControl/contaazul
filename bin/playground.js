@@ -10,7 +10,7 @@ const print = (response) => {
 const run = async () => {
   console.log('')
   console.log('Product')
-  console.log('listing product categories..')
+  console.log('list product categories')
   const listCategoriesResponse = await client.products.listCategories({
     page: 1,
     size: 10
@@ -18,12 +18,12 @@ const run = async () => {
   print(listCategoriesResponse)
 
   if (listCategoriesResponse.data.length) {
-    console.log('getting product category by id..')
+    console.log('get product category by id')
     const getCategoryResponse = await client.products.getCategory(listCategoriesResponse.data[0].id)
     print(getCategoryResponse)
   }
 
-  console.log('creating a product..')
+  console.log('create a product')
   const createProductResponse = await client.products.create({
     name: 'Game Atari ET',
     value: 100,
@@ -38,11 +38,11 @@ const run = async () => {
   })
   print(createProductResponse)
 
-  console.log(`gettint product by id ${createProductResponse.data.id}..`)
+  console.log(`get product by id ${createProductResponse.data.id}`)
   const getProductResponse = await client.products.get(createProductResponse.data.id)
   print(getProductResponse)
 
-  console.log(`updating ${createProductResponse.data.id} product..`)
+  console.log(`update ${createProductResponse.data.id} product`)
   const updateProductResponse = await client.products.update(createProductResponse.data.id, {
     name: 'Game Atari ET',
     value: 100,
@@ -57,19 +57,19 @@ const run = async () => {
   })
   print(updateProductResponse)
 
-  console.log('listing products..')
+  console.log('list products')
   const listProductsResponse = await client.products.list({
     name: 'Game Atari ET'
   })
   print(listProductsResponse)
 
-  console.log(`deleting ${createProductResponse.data.id} product..`)
+  console.log(`delete ${createProductResponse.data.id} product..`)
   const deleteProductResponse = await client.products.delete(createProductResponse.data.id)
   print(deleteProductResponse)
 
   console.log('')
   console.log('Service')
-  console.log('creating a service..')
+  console.log('create a service')
   const createServiceResponse = await client.services.create({
     name: 'Fix car engine',
     value: 100,
@@ -78,7 +78,7 @@ const run = async () => {
   })
   print(createServiceResponse)
 
-  console.log('listing services..')
+  console.log('list services')
   const listServicesResponse = await client.services.list({
     name: 'Fix car engine'
   })
@@ -88,7 +88,7 @@ const run = async () => {
   const getServiceResponse = await client.services.get(createServiceResponse.data.id)
   print(getServiceResponse)
 
-  console.log(`updating service id ${createServiceResponse.data.id}..`)
+  console.log(`update service id ${createServiceResponse.data.id}`)
   const updateServiceResponse = await client.services.update(createServiceResponse.data.id, {
     name: 'Fix car engine',
     value: 100,
@@ -97,13 +97,13 @@ const run = async () => {
   })
   print(updateServiceResponse)
 
-  console.log(`deleting service id ${createServiceResponse.data.id}..`)
+  console.log(`delete service id ${createServiceResponse.data.id}`)
   const deleteServiceResponse = await client.services.delete(createServiceResponse.data.id)
   print(deleteServiceResponse)
 
   console.log('')
   console.log('Customer')
-  console.log('creating a customer..')
+  console.log('create a customer')
   const createCustomerResponse = await client.customers.create({
     name: 'John C.',
     company_name: 'John Company',
@@ -136,7 +136,7 @@ const run = async () => {
   })
   print(createCustomerResponse)
 
-  console.log('listing customers..')
+  console.log('list customers')
   const listCustomersResponse = await client.services.list({
     document: '00011122233'
   })
@@ -146,11 +146,11 @@ const run = async () => {
   const getCustomerResponse = await client.customers.get(createCustomerResponse.data.id)
   print(getCustomerResponse)
 
-  console.log(`listing customer id ${createCustomerResponse.data.id} contacts`)
+  console.log(`list customer id ${createCustomerResponse.data.id} contacts`)
   const listCustomerContactsResponse = await client.customers.listContacts(createCustomerResponse.data.id)
   print(listCustomerContactsResponse)
 
-  console.log(`updating customer id ${createCustomerResponse.data.id}..`)
+  console.log(`update customer id ${createCustomerResponse.data.id}`)
   const updateCustomerResponse = await client.customers.update(createCustomerResponse.data.id, {
     name: 'John C.',
     company_name: 'John Company',
@@ -175,17 +175,17 @@ const run = async () => {
   })
   print(updateCustomerResponse)
 
-  console.log(`inactivating customer id ${createCustomerResponse.data.id}..`)
+  console.log(`inactivating customer id ${createCustomerResponse.data.id}`)
   const inactivateCustomerResponse = await client.customers.inactivate(createCustomerResponse.data.id)
   print(inactivateCustomerResponse)
 
-  console.log(`deleting customer id ${createCustomerResponse.data.id}..`)
+  console.log(`delete customer id ${createCustomerResponse.data.id}`)
   const deleteCustomerResponse = await client.customers.delete(createCustomerResponse.data.id)
   print(deleteCustomerResponse)
 
   console.log('')
   console.log('Supplier (beta)')
-  console.log('creating a supplier..')
+  console.log('create a supplier')
   const createSupplierResponse = await client.suppliers.create({
     name: 'John C.',
     company_name: 'John C. Company',
@@ -212,7 +212,7 @@ const run = async () => {
   })
   print(createSupplierResponse)
 
-  console.log('listing suppliers..')
+  console.log('list suppliers')
   const listSuppliersResponse = await client.suppliers.list({
     company_name: 'John C. Company'
   })
@@ -222,7 +222,7 @@ const run = async () => {
   const getSupplierResponse = await client.suppliers.get(createSupplierResponse.data.id)
   print(getSupplierResponse)
 
-  console.log(`updating supplier id ${createSupplierResponse.data.id}..`)
+  console.log(`update supplier id ${createSupplierResponse.data.id}`)
   const updateSupplierResponse = await client.suppliers.update(createSupplierResponse.data.id, {
     name: 'John C.',
     company_name: 'John C. Company',
@@ -248,7 +248,7 @@ const run = async () => {
   })
   print(updateSupplierResponse)
 
-  console.log(`deleting supplier id ${createSupplierResponse.data.id}..`)
+  console.log(`delete supplier id ${createSupplierResponse.data.id}`)
   const deleteSupplierResponse = await client.suppliers.delete(createSupplierResponse.data.id)
   print(deleteSupplierResponse)
 
@@ -278,7 +278,7 @@ const run = async () => {
     person_type: 'NATURAL'
   })
 
-  console.log('creating a contract..')
+  console.log('create a contract')
   const createContractResponse = await client.contracts.create({
     number: 12,
     emission: '2020-01-25T14:17:22.725Z',
@@ -311,7 +311,7 @@ const run = async () => {
   })
   print(createContractResponse)
 
-  console.log(`getting contract id ${createContractResponse.data.id}`)
+  console.log(`get contract id ${createContractResponse.data.id}`)
   const getContractResponse = await client.contracts.get(createContractResponse.data.id)
   print(getContractResponse)
 
@@ -346,7 +346,7 @@ const run = async () => {
     person_type: 'NATURAL'
   })
 
-  console.log('creating a sale..')
+  console.log('create a sale')
   const createSaleResponse = await client.sales.create({
     number: 12,
     emission: '2020-01-25T16:05:57.212Z',
@@ -388,7 +388,7 @@ const run = async () => {
   })
   print(createSaleResponse)
 
-  console.log('listing sales')
+  console.log('list sales')
   const listSalesResponse = await client.sales.list({
     status: 'COMMITTED',
     customer_id: saleCustomerResponse.data.id
@@ -399,7 +399,7 @@ const run = async () => {
   const getSaleResponse = await client.sales.get(createSaleResponse.data.id)
   print(getSaleResponse)
 
-  console.log(`updating sale id ${createSaleResponse.data.id}`)
+  console.log(`update sale id ${createSaleResponse.data.id}`)
   const updateSaleResponse = await client.sales.update(createSaleResponse.data.id, {
     number: 12,
     emission: '2020-01-25T16:05:57.212Z',
@@ -441,14 +441,14 @@ const run = async () => {
   })
   print(updateSaleResponse)
 
-  console.log('getting sale\'s installment by number')
+  console.log('get sale\'s installment by number')
   const getInstallmentSaleResponse = await client.sales.getInstallment({
     id: createSaleResponse.data.id,
     number: 1
   })
   print(getInstallmentSaleResponse)
 
-  console.log('updating sale\'s installment status')
+  console.log('update sale\'s installment status')
   const updateInstallmentSaleResponse = await client.sales.updateInstallment({
     id: createSaleResponse.data.id,
     number: 1,
@@ -456,13 +456,13 @@ const run = async () => {
   })
   print(updateInstallmentSaleResponse)
 
-  console.log('listing sales items by filters..')
+  console.log('list sales items by filters')
   const listItemsSaleResponse = await client.sales.listItems(createSaleResponse.data.id, {
     description: 'Fix car engine'
   })
   print(listItemsSaleResponse)
 
-  console.log(`deleting sale id ${createSaleResponse.data.id}..`)
+  console.log(`delete sale id ${createSaleResponse.data.id}`)
   const deleteSaleResponse = await client.sales.delete(createSaleResponse.data.id)
   print(deleteSaleResponse)
 

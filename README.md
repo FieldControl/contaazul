@@ -30,15 +30,23 @@ This client is intended for server side use only.
 npm install contaazul --save
 ```
 
+<div align="center">
+  <img height="30px" src=".github/static/separator.png"/>
+</div>
+
 ## Playground
 
-You can run and watch everthing working fine at [bin/playground.js](playground)
+You can run and watch everything working fine at [bin/playground.js](https://github.com/FieldControl/contaazul/blob/master/bin/playground.js) script
 
 **Note**: You must enter your accessToken before running:
 
 ```
 node bin/playground.js
 ```
+
+<div align="center">
+  <img height="30px" src=".github/static/separator.png"/>
+</div>
 
 ## Usage
 
@@ -1239,13 +1247,27 @@ const response = await client.sales.delete('968150ce-d57a-4a97-ab6c-4da83b255f79
 - **One pull request per feature**. If you want to do more than one thing, send
   multiple pull requests.
 
+<div align="center">
+  <img height="30px" src=".github/static/separator.png"/>
+</div>
+
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
 
 <div align="center">
-  <h3>Build with ❤ by Field Control︎</h3>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</div>
+
+<div align="center">
   <p>
-    Follow <a href="https://instagram/fieldcontrolapp" target="_blank">@FieldControlApp</a> on instagram! :)
+    <sub>
+      Follow <a href="https://instagram/fieldcontrolapp" target="_blank">@FieldControlApp</a> on instagram! ❤
+    </sub>
   </p> 
 </div>
