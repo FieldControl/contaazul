@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const nock = require('nock')
-const Client = require('./../../src/index')
-const client = new Client({
+const ContaAzul = require('./../../src/index')
+const client = new ContaAzul({
   accessToken: 'accessToken'
 })
 

@@ -8,13 +8,13 @@ const client = new Client({
 describe('Products', () => {
   it('should get product category by id', async () => {
     nock('https://api.contaazul.com/v1').get('/product-categories/1ffc4a8d-af0a-4d2d-91f5-35adbee6e1ff').reply(200, {})
-    const response = await client.products.category('1ffc4a8d-af0a-4d2d-91f5-35adbee6e1ff')
+    const response = await client.products.getCategory('1ffc4a8d-af0a-4d2d-91f5-35adbee6e1ff')
     expect(response.status).toBe(200)
   })
 
   it('should list product categories given no params', async () => {
     nock('https://api.contaazul.com/v1').get('/product-categories').reply(200, {})
-    const response = await client.products.categories()
+    const response = await client.products.listCategories()
     expect(response.status).toBe(200)
   })
 
@@ -22,7 +22,7 @@ describe('Products', () => {
     nock('https://api.contaazul.com/v1').get('/product-categories').query({
       name: 'Outros insumos'
     }).reply(200, {})
-    const response = await client.products.categories({
+    const response = await client.products.listCategories({
       name: 'Outros insumos'
     })
     expect(response.status).toBe(200)

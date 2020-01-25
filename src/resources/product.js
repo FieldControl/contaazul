@@ -3,11 +3,11 @@ class Product {
     this.client = client
   }
 
-  category (id) {
+  getCategory (id) {
     return this.client.get(`product-categories/${id}`)
   }
 
-  categories (params = {}) {
+  listCategories (params = {}) {
     return this.client.get('product-categories', params)
   }
 
