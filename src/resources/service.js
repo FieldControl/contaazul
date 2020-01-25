@@ -3,25 +3,25 @@ class Service {
     this.client = client
   }
 
-  delete (id) {
-    return this.client.delete(`services/${id}`)
+  create (service) {
+    delete service.id
+    return this.client.post('services', service)
   }
 
   get (id) {
     return this.client.get(`services/${id}`)
   }
 
-  update (id, service) {
-    return this.client.put(`services/${id}`, service)
-  }
-
   list (params = {}) {
     return this.client.get('services', params)
   }
 
-  create (service) {
-    delete service.id
-    return this.client.post('services', service)
+  update (id, service) {
+    return this.client.put(`services/${id}`, service)
+  }
+
+  delete (id) {
+    return this.client.delete(`services/${id}`)
   }
 }
 

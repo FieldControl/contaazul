@@ -3,33 +3,33 @@ class Customer {
     this.client = client
   }
 
-  contacts (id) {
-    return this.client.get(`customers/${id}/contacts`)
-  }
-
-  inactivate (id) {
-    return this.client.delete(`customers/inactivate/${id}`)
-  }
-
-  delete (id) {
-    return this.client.delete(`customers/${id}`)
+  create (customer) {
+    delete customer.id
+    return this.client.post('customers', customer)
   }
 
   get (id) {
     return this.client.get(`customers/${id}`)
   }
 
-  update (id, contact) {
-    return this.client.put(`customers/${id}`, contact)
-  }
-
   list (params = {}) {
     return this.client.get('customers', params)
   }
 
-  create (contact) {
-    delete contact.id
-    return this.client.post('customers', contact)
+  update (id, customer) {
+    return this.client.put(`customers/${id}`, customer)
+  }
+
+  delete (id) {
+    return this.client.delete(`customers/${id}`)
+  }
+
+  inactivate (id) {
+    return this.client.delete(`customers/inactivate/${id}`)
+  }
+
+  listContacts (id, params = {}) {
+    return this.client.get(`customers/${id}/contacts`, params)
   }
 }
 
