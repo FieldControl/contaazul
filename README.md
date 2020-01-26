@@ -3,7 +3,7 @@
   <div><code>npm install contaazul --save</code></div>
   <br>
   <p>
-    ContaAzul, unofficial Node.js bindings to the ContaAzul API - <a target="_blank" href="https://developers.contaazul.com/">Docs</a>
+    Unofficial Node.js bindings to the ContaAzul API - <a target="_blank" href="https://developers.contaazul.com/">https://developers.contaazul.com/</a>
   </p>
   <p>
 
@@ -565,7 +565,7 @@ const response = await client.customers.delete('45165503-45ac-4f58-8739-74f9a104
   <img height="30px" src=".github/static/separator.png"/>
 </div>
 
-### Supplier (beta)
+### Supplier <sup style="text-decoration: underline;">_beta_</sup>
 
 ```js
 // Create a supplier
@@ -787,7 +787,7 @@ const response = await client.suppliers.delete('da6fc701-222b-4752-93b1-ad95c43d
   <img height="30px" src=".github/static/separator.png"/>
 </div>
 
-### Contract (beta)
+### Contract <sup style="text-decoration: underline;">_beta_</sup>
 
 ```js
 // Create a contract
@@ -1265,7 +1265,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 <div align="center">
   <p>
     <sub>
-      Follow us on instagram: <a href="https://instagram.com/fieldcontrolapp" target="_blank">@FieldControlApp</a> ❤
+      Open source, from <a href="https://instagram.com/fieldcontrolapp" target="_blank">Field Control</a> with ❤
     </sub>
   </p> 
 </div>
