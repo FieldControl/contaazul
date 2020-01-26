@@ -19,6 +19,6 @@ jobs:
     - name: Publish Code Climate coverage
       uses: paambaati/codeclimate-action@v2.3.0
       env:
-        CC_TEST_REPORTER_ID: 89bb7e83d8b3eb568f600344997fbc9130b32417468b275f827a4391f37474d3
+        CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
         debug: true

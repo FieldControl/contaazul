@@ -9,8 +9,8 @@
 
 ![Field Control ♥](https://img.shields.io/badge/Field%20Control-%20%20%20%20%20%20♥-blue.svg)
 ![](https://github.com/FieldControl/contaazul/workflows/Continuous%20Integration/badge.svg)
-[![Maintainability](https://api.codeclimate.com/v1/badges/7277a15a0179ed9d7010/maintainability)](https://codeclimate.com/repos/5e2c796c97e9f50163006c7d/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/7277a15a0179ed9d7010/test_coverage)](https://codeclimate.com/repos/5e2c796c97e9f50163006c7d/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/03ed222cb6a8f4dd4383/maintainability)](https://codeclimate.com/github/FieldControl/contaazul/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/03ed222cb6a8f4dd4383/test_coverage)](https://codeclimate.com/github/FieldControl/contaazul/test_coverage)
 
   </p>
   <p>
@@ -1260,14 +1260,12 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
   <br/>
   <br/>
   <br/>
-  <br/>
-  <br/>
 </div>
 
 <div align="center">
   <p>
     <sub>
-      Follow <a href="https://instagram/fieldcontrolapp" target="_blank">@FieldControlApp</a> on instagram! ❤
+      Follow us on instagram: <a href="https://instagram.com/fieldcontrolapp" target="_blank">@FieldControlApp</a> ❤
     </sub>
   </p> 
 </div>

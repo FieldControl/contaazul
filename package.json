@@ -1,7 +1,7 @@
 {
   "name": "contaazul",
   "version": "0.0.2",
-  "description": "",
+  "description": "Unofficial Node.js bindings to the ContaAzul API - https://developers.contaazul.com/",
   "main": "src/index.js",
   "directories": {
     "test": "test"
