@@ -21,6 +21,14 @@
 </div>
 
 ---
+## Summary
+#### Resources
+- [Product](#product)
+- [Service](#service)
+- [Customer](#customer)
+- [Supplier](#supplier-beta)
+- [Contract](#contract-beta)
+- [Sale](#sale)
 
 ## Installation
 
