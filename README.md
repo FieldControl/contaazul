@@ -21,14 +21,6 @@
 </div>
 
 ---
-## Summary
-#### Resources
-- [Product](#product)
-- [Service](#service)
-- [Customer](#customer)
-- [Supplier](#supplier-beta)
-- [Contract](#contract-beta)
-- [Sale](#sale)
 
 ## Installation
 
@@ -64,6 +56,18 @@ const client = new ContaAzul({
   accessToken: 'Wx15BlcpBbQyl15y64I0vDfVPWbsTdNX<3'
 })
 ```
+
+<div align="center">
+  <img height="30px" src=".github/static/separator.png"/>
+</div>
+
+### Resources
+- [Product](#product)
+- [Service](#service)
+- [Customer](#customer)
+- [Supplier](#supplier-beta)
+- [Contract](#contract-beta)
+- [Sale](#sale)
 
 ### Product
 
