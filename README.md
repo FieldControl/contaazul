@@ -53,7 +53,7 @@ node bin/playground.js
 ```js
 const ContaAzul = require('contaazul')
 const client = new ContaAzul({
-  accessToken: 'Wx15BlcpBbQyl15y64I0vDfVPWbsTdNX<3'
+  accessToken: ''
 })
 ```
 

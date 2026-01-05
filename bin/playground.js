@@ -1,6 +1,6 @@
 const ContaAzul = require('./../src/index')
 const client = new ContaAzul({
-  accessToken: 'Wsa5BlcpBbQylCasd64I0vDfVPWbsTasd5<3'
+  accessToken: ''
 })
 
 const print = (response) => {
